@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BGMI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      
+    }
+
+    header {
+      background-image: url('../multimedia/HD-wallpaper-battlegrounds-mobile-india-bgmi-thumbnail.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+   
+
+    header h1 {
+      font-size: 4em;
+      color: #ffcc00;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    nav {
+      background-color: #1a1a1a;
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ffcc00;
+      color: #000;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #ffcc00;
+      margin-bottom: 20px;
+    }
+
+    .features, .modes, .weapons, .maps, .faq {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .card {
+      background-color: #1e1e1e;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      flex: 1 1 30%;
+      box-sizing: border-box;
+    }
+
+    .card h3 {
+      color: #ffcc00;
+      margin-bottom: 10px;
+    }
+
+    .video {
+      text-align: center;
+      padding-left: 20px;
+      margin: 40px 0;
+    }
+
+    iframe {
+      width: 100%;
+      alignment-baseline: 50;
+      height: 600px;
+      border: gold;
+      border-radius: 0%;
+    }
+
+    .download {
+      text-align: center;
+    }
+
+    .download a {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .download a:hover {
+      background-color: #e6b800;
+    }
+
+    .Profile {
+       text-align: center;
+    }
+    .Profile a {
+      background-color: #ffcc00;
+      color: #000;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .Profile a:hover {
+      background-color: #e6b800;
+    }
+
+    .requirements, .newsletter {
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .contact, .socials {
+      text-align: center;
+    }
+
+    .socials a {
+      margin: 10px;
+      font-size: 24px;
+      color: #ffcc00;
+      transition: transform 0.3s;
+    }
+
+    .socials a:hover {
+      transform: scale(1.2);
+    }
+
+    input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #e6b800;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 30px 20px;
+      color: #aaa;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BGMI - Battle Royale Begins</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#features">Features</a>
+    <a href="#video">Trailer</a>
+    <a href="#modes">Modes</a>
+    <a href="#weapons">Weapons</a>
+    <a href="#maps">Maps</a>
+    <a href="#download">Download</a>
+    <a href="#Profile">Profile</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About BGMI</h2>
+    <p>BGMI (Battlegrounds Mobile India) is a multiplayer battle royale game developed by Krafton exclusively for Indian players. It offers fast-paced 100-player battles with various modes like Classic, Arena, Payload, and more. With a strong community and regular updates, it has become one of the top gaming titles in India.</p>
+  </section>
+
+  <section id="features">
+    <h2>Features</h2>
+    <div class="features">
+      <div class="card"
+      style="background-image: url('../multimedia/HD-wallpaper-battlegrounds-mobile-india-bgmi-thumbnail.jpg');">
+        <h3>High-Quality Graphics</h3>
+        <p >Enjoy immersive visuals with Ultra HD settings powered by Unreal Engine 4.</p>
+      </div>
+      <div class="card"  style="background-image: url('../multimedia/thro.jpeg');">
+        <h3>Custom Game Modes</h3>
+        <p>Experience various exciting modes including Zombie, Payload, and Team Deathmatch.</p>
+      </div>
+      <div class="card" style="background-image: url(../multimedia/livik.jpeg); align-items:flex-end">
+        <h3>Indian Events</h3>
+        <p>Participate in exclusive Indian-themed events and earn exciting rewards.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="video" class="video" >
+    <h2>Watch the BGMI Trailer</h2>
+    <iframe style="padding-left: 220px;"  src="/multimedia/bgmi-bgmi-pubg-whatsapp-status-bgmi-velocity-edit-1080-ytshorts.savetube.me.mp4"  title="BGMI Trailer" ></iframe>
+  </section>
+
+  <section id="modes">
+    <h2>Game Modes</h2>
+    <div class="modes" >
+      <div class="card" style="background-image: url(../multimedia/OIP.jpg);">
+        <h3>Classic Mode</h3>
+        <p>Traditional 100-player survival mode with maps like Erangel, Miramar, and Livik.</p>
+      </div>
+      <div class="card" style="background-image: url(../multimedia/TDM.jpg);">
+        <h3>Arena Mode</h3>
+        <p>Fast-paced 4v4 battles in maps like Warehouse and Hangar.</p>
+      </div>
+      <div class="card" style="background-image: url(../multimedia/paylodmode.jpeg);">
+        <h3>Payload Mode</h3>
+        <p>Use helicopters and rocket launchers in a warzone setting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="weapons">
+    <h2>Weapons</h2>
+    <div class="weapons">
+      <div class="card" style="background-image: url(../multimedia/india.jpeg);" >
+        <h3>Assault Rifles</h3>
+        <p>AKM, M416, Scar-L, Groza and more.</p>
+      </div>
+      <div class="card" style="background-image: url(../multimedia/snipe.jpeg);">
+        <h3>Sniper Rifles</h3>
+        <p>K98k, M24, AWM - deadly from a distance.</p>
+      </div>
+      <div class="card" style="background-image: url(../multimedia/throw.jpg);">
+        <h3>Throwables</h3>
+        <p>Frag Grenade, Smoke, Molotov for tactical play.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="maps">
+    <h2>Maps</h2>
+    <div class="maps">
+      <div class="card" style="background-image: url(../multimedia/era.jpeg);">
+        <h3>Erangel</h3>
+        <p>The most iconic battleground with towns, forests, and military bases.</p>
+      </div>
+      <div class="card" style="background-image: url(../multimedia/mir.jpeg);">
+        <h3>Miramar</h3>
+        <p>A desert-themed map with long-range gunfights and open terrain.</p>
+      </div>
+      <div class="card" style="background-image: url(../multimedia/liv.jpeg);">
+        <h3>Livik</h3>
+        <p>A small, fast-paced map perfect for quick matches.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="requirements">
+    <h2>System Requirements</h2>
+    <ul>
+      <li><strong>OS:</strong> Android 5.1.1 or above</li>
+      <li><strong>RAM:</strong> Minimum 2GB (Low settings), 4GB recommended</li>
+      <li><strong>Storage:</strong> Around 2GB download + additional files</li>
+      <li><strong>iOS:</strong> iPhone 6s and above</li>
+    </ul>
+  </section>
+
+  
+
+  <section class="download" id="download">
+    <h2>Download BGMI</h2>
+    <a href="https://www.battlegroundsmobileindia.com/" target="_blank">Download for Android</a>
+  </section>
+  <section class="Profile" id="Profile">
+    <h2>Players </h2>
+    <a href="./players.html" target="_blank">RVD BGMI SQUAD</a>
+  </section>
+
+  <section class="newsletter">
+    <h2>Subscribe to our Newsletter</h2>
+    <form>
+      <table>
+      <tr>
+        <td><h3 style="color: #ffcc00;"> Feedback</h3>
+    <textarea style="align-items: center;" placeholder="Enter your Feedback"></textarea> 
+      </td></tr>
+      <tr><td> 
+      <input type="email" placeholder="Enter your email" required />
+      <input type="submit" value="Subscribe" /></td></tr>
+      </table>
+    </form>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: tamil2006selva@gmail.com</p>
+    <p>Phone: +91-9360423565</p>
+  </section>
+
+  <section class="socials">
+    <h2>Follow Us</h2>
+    <a href="https://twitter.com/battlegroundmin" target="_blank"> 🐦 Twitter</a>
+    <a href="https://www.facebook.com/BattlegroundsMobileIN/" target="_blank">📘 Facebook</a>
+    <a href="https://www.instagram.com/battlegroundsmobilein_official/" target="_blank">📷 Instagram</a>
+    <a href="https://www.youtube.com/channel/UCe31NPEeRGO0hcznx6Tdb-g" target="_blank">▶️ YouTube</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BGMI Web Page.</p>
+    <p>
+      <a href="#about">About</a> |
+      <a href="#features">Features</a> |
+      <a href="#download">Download</a> |
+      <a href="#Profile">Profile </a>
+    </p>
+  </footer>
+
+</body>
+</html>

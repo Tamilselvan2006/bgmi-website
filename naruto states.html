@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BGMI S+ Player Stats</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #eee;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 30px;
+      background: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #000;
+    }
+
+    h1 {
+      text-align: center;
+      color: #f7c948;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .rating {
+      text-align: center;
+      font-size: 26px;
+      color: #ffd700;
+      margin: 15px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #2b2b2b;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+    }
+
+    .title {
+      font-weight: bold;
+      color: #bbb;
+      margin-bottom: 5px;
+    }
+
+    .value {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .section-title {
+      grid-column: 1 / -1;
+      margin-top: 30px;
+      font-size: 1.5rem;
+      color: #f0f0f0;
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>BGMI Player Stats – Current Season (TPP Squad)</h1>
+  <div class="rating">🌟 Rating: 76.9 — Rank: S</div>
+
+  <div class="grid">
+    <div class="card"><div class="title">Matches Played</div><div class="value">69</div></div>
+    <div class="card"><div class="title">Wins</div><div class="value">8</div></div>
+    <div class="card"><div class="title">Top 10</div><div class="value">68</div></div>
+    <div class="card"><div class="title">Finishes</div><div class="value">176</div></div>
+    <div class="card"><div class="title">F/D Ratio</div><div class="value">2.55</div></div>
+    <div class="card"><div class="title">Win Ratio</div><div class="value">11.6%</div></div>
+    <div class="card"><div class="title">Top 10 Rate</div><div class="value">98.6%</div></div>
+    <div class="card"><div class="title">Accuracy</div><div class="value">15.5%</div></div>
+    <div class="card"><div class="title">Headshot Rate</div><div class="value">14.8%</div></div>
+    <div class="card"><div class="title">Headshots</div><div class="value">26</div></div>
+    <div class="card"><div class="title">Avg Damage</div><div class="value">465.0</div></div>
+    <div class="card"><div class="title">Total Damage</div><div class="value">32084.0</div></div>
+    <div class="card"><div class="title">Most Finishes</div><div class="value">7</div></div>
+    <div class="card"><div class="title">Highest Damage in a Match</div><div class="value">1073</div></div>
+    <div class="card"><div class="title">Total Assists</div><div class="value">49</div></div>
+    <div class="card"><div class="title">Avg Assists</div><div class="value">0.7</div></div>
+    <div class="card"><div class="title">Longest Travelled</div><div class="value">6.77 KM</div></div>
+  </div>
+
+  <div class="section-title">Performance Breakdown</div>
+  <div class="grid">
+    <div class="card"><div class="title">Combat</div><div class="value">60.9</div></div>
+    <div class="card"><div class="title">Survived</div><div class="value">86.3</div></div>
+    <div class="card"><div class="title">Support</div><div class="value">80.1</div></div>
+    <div class="card"><div class="title">Feedback</div><div class="value">74.0</div></div>
+    <div class="card"><div class="title">Win Ratio Score</div><div class="value">67.4</div></div>
+  </div>
+
+  <footer>
+    &copy; 2025 BGMI Stats UI | S Ranked Profile
+  </footer>
+</div>
+
+</body>
+</html>
+

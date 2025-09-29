@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RVD Gopes E Sports Center</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 40px;
+      color: yellow;
+      text-shadow: 2px 2px #333;
+    }
+
+    a {
+      color: #00ffff;
+      font-size: 18px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    a:hover {
+      color: #ffcc00;
+      text-decoration: underline;
+    }
+
+    table {
+      width: 80%;
+      margin: 40px auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    th, td {
+      padding: 15px;
+      border: 1px solid yellow;
+    }
+
+    th {
+      background-color: yellow;
+      color: white;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    tr:nth-child(even) {
+      background-color: #1a1a1a;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #333;
+    }
+
+    tr:hover {
+      background-color: #444;
+      transform: scale(1.02);
+      transition: 0.3s ease;
+    }
+
+    td a {
+      color: #00ffff;
+      font-weight: bold;
+    }
+
+    td a:hover {
+      color: #ffcc00;
+    }
+
+    .error {
+      color: red;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>RVD BGMI SQUAD</h1>
+  <p><a href="https://maps.app.goo.gl/b3Mtra1s2g1GFkyw9" target="_blank">📍 View Location</a></p>
+
+  <table>
+    <tr>
+      <th>PLAYER NAME</th>
+      <th>PROFILE</th>
+    </tr>
+    <tr>
+      <td>MINATO</td>
+      <td><a onclick="login('minato')">MINATO PROFILE</a></td>
+    </tr>
+    <tr>
+      <td>NARUTO</td>
+      <td><a onclick="login('naruto')">NARUTO PROFILE</a></td>
+    </tr>
+    <tr>
+      <td>JIRAYA</td>
+      <td><a onclick="login('jiraya')">JIRAYA PROFILE</a></td>
+    </tr>
+    <tr>
+      <td>PAIN</td>
+      <td><a onclick="login('pain')">PAIN PROFILE</a></td>
+    </tr>
+    <tr>
+      <td>ROCKLEE</td>
+      <td><a onclick="login('rocklee')">ROCKLEE PROFILE</a></td>
+    </tr>
+  </table>
+
+  <p class="error" id="error-msg"></p>
+
+  <script>
+    // Define usernames and passwords
+    const credentials = {
+      minato: { username: "minato", password: "minato123", link: "minato.html" },
+      naruto: { username: "naruto", password: "naruto123", link: "naruto.html" },
+      jiraya: { username: "jiraya", password: "jiraya123", link: "jiraya.html" },
+      pain: { username: "pain", password: "pain123", link: "pain.html" },
+      rocklee: { username: "rocklee", password: "rocklee123", link: "rocklee.html" }
+    };
+
+    function login(player) {
+      const user = prompt("Enter username:");
+      const pass = prompt("Enter password:");
+      const correct = credentials[player];
+
+      if (user === correct.username && pass === correct.password) {
+        window.location.href = correct.link;
+      } else {
+        document.getElementById("error-msg").innerText = "❌ Incorrect username or password!";
+      }
+    }
+  </script>
+</body>
+</html>
